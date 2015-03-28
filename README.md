@@ -6,24 +6,23 @@
 <p>After succesfully loading the dictionary and initializing the frequencies to 0. The user can start typing a word and press tab for up to 4 suggestions, he can then choose one of them. If the word is not available the user can continue typing and press spacbar. The word then will be saved in the file for future use</p>
 <p>Every time a word is autocompleted the previous words of the line reapear on the screen if enter is stroked then a new line begins</p>
 <strong>Usage</strong><br>
-<h5>Compile</h5><p>make</p>
-<h5>Execute</h5><p>./typing-assistant</p>
-&nbsp;&nbsp;&nbsp;<h6>Optional Arguments</h6><p>-b [absolute path of dictionary]</p>
+<p>./typing-assistant</p>
+<h6>Optional Arguments</h6><p>-b [absolute path of dictionary]</p>
 <strong>Struct</strong>
 <code>
-typedef struct lnode *LeafPtr;
-typedef struct tnode *TriePtr;
-typedef struct lnode
-{
-	int frequency;
-	TriePtr Father;
-}LeafNode;
-typedef struct tnode
-{
-	char * key;
-	LeafPtr Frequent[N];
-	TriePtr Father;
-	TriePtr Child;
-	TriePtr Next;
-	LeafPtr Leaf;
+typedef struct lnode *LeafPtr;<br>
+typedef struct tnode *TriePtr;<br>
+typedef struct lnode<br>
+{<br>
+	int frequency;<br>
+	TriePtr Father;<br>
+}LeafNode;<br>
+typedef struct tnode<br>
+{<br>
+	char * key;<br>
+	LeafPtr Frequent[N];<br>
+	TriePtr Father;<br>
+	TriePtr Child;<br>
+	TriePtr Next;<br>
+	LeafPtr Leaf;<br>
 }TrieNode;</code>
