@@ -6,5 +6,4 @@
 <p>After succesfully loading the dictionary and initializing the frequencies to 0. The user can start typing a word and press tab for up to 4 suggestions, he can then choose one of them. If the word is not available the user can continue typing and press spacbar. The word then will be saved in the file for future use</p>
 <p>Every time a word is autocompleted the previous words of the line reapear on the screen if enter is stroked then a new line begins</p>
 <strong>Usage</strong><br>
-<p>./typing-assistant</p>
-<p>Optional Arguments</p><p>-b [absolute path of dictionary]</p>
+<p>./typing-assistant [OPTIONAL]-b [absolute path of dictionary]</p>
