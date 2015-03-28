@@ -9,20 +9,22 @@
 <p>./typing-assistant</p>
 <h6>Optional Arguments</h6><p>-b [absolute path of dictionary]</p>
 <strong>Struct</strong><br>
-<p>
+<code>
 typedef struct lnode *LeafPtr;<br>
 typedef struct tnode *TriePtr;<br>
 typedef struct lnode<br>
-{<br>
-    int frequency;<br>
-    TriePtr Father;<br>
+{<ul>
+    <li>int frequency;</li>
+    <li>TriePtr Father;</li>
+    </ul>
 }LeafNode;<br>
 typedef struct tnode<br>
-{<br>
-	char * key;<br>
-	LeafPtr Frequent[N];<br>
-	TriePtr Father;<br>
-	TriePtr Child;<br>
-	TriePtr Next;<br>
-	LeafPtr Leaf;<br>
-}TrieNode;</p>
+{<ul>
+	<li>char * key;</li>
+	<li>LeafPtr Frequent[N];</li>
+	<li>TriePtr Father;</li>
+	<li>TriePtr Child;</li>
+	<li>TriePtr Next;</li>
+	<li>LeafPtr Leaf;</li>
+	</ul>
+}TrieNode;</code>
