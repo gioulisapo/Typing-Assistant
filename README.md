@@ -7,24 +7,4 @@
 <p>Every time a word is autocompleted the previous words of the line reapear on the screen if enter is stroked then a new line begins</p>
 <strong>Usage</strong><br>
 <p>./typing-assistant</p>
-<h6>Optional Arguments</h6><p>-b [absolute path of dictionary]</p>
-<strong>Struct</strong><br>
-<p>
-typedef struct lnode *LeafPtr;<br>
-typedef struct tnode *TriePtr;<br>
-typedef struct lnode<br>
-{<ul>
-    <li>int frequency;</li>
-    <li>TriePtr Father;</li>
-    </ul>
-}LeafNode;<br>
-typedef struct tnode<br>
-{<ul>
-	<li>char * key;</li>
-	<li>LeafPtr Frequent[N];</li>
-	<li>TriePtr Father;</li>
-	<li>TriePtr Child;</li>
-	<li>TriePtr Next;</li>
-	<li>LeafPtr Leaf;</li>
-	</ul>
-}TrieNode;</p>
+<p>Optional Arguments</p><p>-b [absolute path of dictionary]</p>
