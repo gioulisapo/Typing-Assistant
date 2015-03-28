@@ -14,8 +14,8 @@ typedef struct lnode *LeafPtr;<br>
 typedef struct tnode *TriePtr;<br>
 typedef struct lnode<br>
 {<br>
-	int frequency;<br>
-	TriePtr Father;<br>
+    int frequency;<br>
+    TriePtr Father;<br>
 }LeafNode;<br>
 typedef struct tnode<br>
 {<br>
