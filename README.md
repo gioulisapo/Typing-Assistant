@@ -8,7 +8,8 @@
 <strong>Usage</strong><br>
 <p>./typing-assistant</p>
 <h6>Optional Arguments</h6><p>-b [absolute path of dictionary]</p>
-<strong>Struct</strong>
+<strong>Struct</strong><br>
+<p>
 typedef struct lnode *LeafPtr;<br>
 typedef struct tnode *TriePtr;<br>
 typedef struct lnode<br>
@@ -24,4 +25,4 @@ typedef struct tnode<br>
 	TriePtr Child;<br>
 	TriePtr Next;<br>
 	LeafPtr Leaf;<br>
-}TrieNode;
+}TrieNode;</p>
